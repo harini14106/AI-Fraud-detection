@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 # Load the trained model
-model = pickle.load(open("D:/ai fraud detection/model.pkl", "rb"))
+model = pickle.load(open("model.pkl", "rb"))
 
 # UI layout
 st.set_page_config(page_title="Fraud Detection", page_icon="🛡️", layout="centered")
