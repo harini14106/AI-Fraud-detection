@@ -1,9 +1,9 @@
 import streamlit as st
 import numpy as np
 import pickle
-
+import joblib
 # Load the trained model
-model = pickle.load(open("model.pkl", "rb"))
+model = joblib.load("model.pkl")
 
 # UI layout
 st.set_page_config(page_title="Fraud Detection", page_icon="🛡️", layout="centered")
